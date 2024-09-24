@@ -96,31 +96,31 @@ and adding content before its actual content
 .hero h1 {
     font-size: 50px;
     margin-bottom: 1rem;
-
 }
 
 .hero p {
     font-size: 20px;
 }
 .hero .name{
-   margin-top: 0.5rem;
+     margin-top: 0.5rem;
     color: #ff5733;
     font-weight:550;
     font-size: 1.2rem;
 
 }
-.hero button {
+ .hero button {
     /* Colors used - ff5733*/
     color: #fff;
-    margin-top: 1rem;
-    margin-left: 44rem;
+    /* margin-top: 1rem; */
+    /* margin-left: 44rem; */
     padding: 0.8rem 1.5rem;
     border: none;
     outline: 0;
     border-radius: 0.5rem;
     background: #ff5733;
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
+ 
+} 
 
 .hero button:hover {
     /* Colors used - c70039*/
@@ -156,17 +156,18 @@ and adding content before its actual content
 .places-grid {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
 .place-card {
-    width: 340px;
+    width: 330px;
     Color: #f3f3f3;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin-right: 10px;
+    margin-bottom: 2rem;
 }
 
 .place-card img {
@@ -216,7 +217,7 @@ and adding content before its actual content
 }
 
 .culture-gallery {
-    width: 350px;
+    width: 340px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,7 +231,7 @@ and adding content before its actual content
     border-radius: 1rem;
     object-fit: cover;
     transition: transform 0.3s ease;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
 }
 
 .culture-gallery img:hover {
@@ -265,4 +266,19 @@ footer {
 footer p {
     color: #fff;
     font-size: 14px;
+}
+
+@media (max-width:768px){
+
+
+    .places-grid {
+        flex-direction: column;
+    }
+
+.culture-gallery{
+    flex-direction: column;
+}
+.hero button{
+    display: none;
+}
 }
